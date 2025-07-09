@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException, Request
-from database import create_table, insert_url, get_url
+from database import createTable, insert_url, get_url
 from utils import generate_short_code
 
 api = FastAPI()
-create_table()
+createTable()
 
 
 @api.post("/shorten")
